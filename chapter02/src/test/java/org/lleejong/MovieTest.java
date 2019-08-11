@@ -28,5 +28,10 @@ public class MovieTest {
                 new PeriodCondition(DayOfWeek.THURSDAY, LocalTime.of(10, 0), LocalTime.of(13, 59))
             )
         );
+        Movie starWars = new Movie("스타워즈",
+            Duration.ofMinutes(210),
+            Money.wons(10000),
+            new NonDiscountPolicy()
+        );
     }
 }
